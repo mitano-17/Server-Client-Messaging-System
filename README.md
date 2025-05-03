@@ -43,12 +43,12 @@ A messaging board system that allows communication between the server and client
 
 | Description |  Input Syntax  |
 |:-----|:--------:|
-| **Connect to the server application**   | `` |
-| **Disconnect to the server application**   | `` |
-| **Register a unique handle or alias**   | `` |
-| **Send message to all**   | `` |
-| **Send direct message to a single handle**   | `` |
-| **Request command help to output all Input Syntax commands for reference**   | `` |
+| **Connect to the server application**   | `{"command":"join"}` |
+| **Disconnect to the server application**   | `{"command":"leave"}` |
+| **Register a unique handle or alias**   | `{"command":"register", "handle":"<handle>"}` |
+| **Send message to all**   | `{"command":"all", "message":"<message>"}` |
+| **Send direct message to a single handle**   | `{"command":"msg", "handle":"<handle>", "message":"<message>"}` |
+| **Request command help to output all Input Syntax commands for reference**   | `{"command":"error", "message":"<error_message>}` |
 
 ● Since the server application would be using JSON format for sending and receiving commands and parameters with the client application, this would mean that your work should be interoperable with the works of your other classmates, despite using different programming languages.</br>
 
